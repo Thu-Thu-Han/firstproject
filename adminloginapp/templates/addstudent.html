@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html>
+    <head>
+    <style>
+            body {
+            background-color: rgba(95, 253, 253, 0.685);
+    }
+        #title {
+        background-color: prink;
+        color: rgb(186, 235, 37);
+        text-align: center;
+        width: 100%;
+        margin: auto,
+    }
+        .container {
+            width: 55%;
+            margin: auto;
+            background-color: rgb(187, 248, 56);
+            color: rgb(233, 159, 47);
+    }
+        #field {
+            text-align: center;
+        }
+        .row-tab {
+            display: block;
+            padding-bottom: 6px;
+    }
+        .label-tab {
+            display: inline-block;
+            width: 55%;
+            text-align: right;
+
+     }
+        .input-tab {
+            display: inline-block;
+            width: 65%;
+            text-align: left;
+        }
+    </style>
+    <header id="title">
+    <h1 >Add Student</h1>
+    <div class="container">
+    <form action="addrecord/" method="post">
+    {% csrf_token %}
+    <from id="field">
+        
+        <table>
+            <tr>
+              <td><label for="roll number">Roll-Number:</label></td>
+              <td><input type="text" name="Roll-Number" id="name" placeholder="roll number"></td>
+            </tr>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="name"></td>
+            </tr> 
+            <tr>
+                <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+                </tr>
+        </table>
+    </div>
+    </form>
+    </html>
